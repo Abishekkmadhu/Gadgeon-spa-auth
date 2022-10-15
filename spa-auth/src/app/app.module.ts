@@ -6,11 +6,12 @@ import {HttpClientModule } from '@angular/common/http';
 import { RouterModule , Routes} from '@angular/router';
 import  {  FormsModule, ReactiveFormsModule} from '@angular/forms'
 import {enableProdMode} from '@angular/core';
-import { RegisterComponent } from './register/register.component';
+
+import { Register1Component } from './register1/register1.component';
 
 const appRoute:Routes=[
   {path: '', component:SignInComponent},
-  {path:'register', component:RegisterComponent},
+  {path:'reg', component:Register1Component},
   
 ]
 
@@ -18,7 +19,7 @@ const appRoute:Routes=[
   declarations: [
     AppComponent,
     SignInComponent,
-    RegisterComponent
+    Register1Component
   ],
   
   imports: [

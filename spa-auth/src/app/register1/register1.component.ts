@@ -4,14 +4,14 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  selector: 'app-register1',
+  templateUrl: './register1.component.html',
+  styleUrls: ['./register1.component.css']
 })
-export class RegisterComponent implements OnInit {
+export class Register1Component implements OnInit {
 
   signupForm!: FormGroup
-  constructor(private formbuilder:FormBuilder, private Http:HttpClient, private route:Router ) { }
+  constructor(private formbuilder:FormBuilder, private http:HttpClient, private router:Router ) { }
 
   ngOnInit(): void {
     this.signupForm = this.formbuilder.group(
@@ -23,7 +23,7 @@ export class RegisterComponent implements OnInit {
     )
   }
   signup(){
-    this.Http.post<any>('http://localhost:3000/users', this.signupForm.value).subscribe(res=>{
+    this.http.post<any>('http://localhost:3000/users', this.signupForm.value).subscribe(res=>{
       alert("Data Entry Succesfull");
     })
     
