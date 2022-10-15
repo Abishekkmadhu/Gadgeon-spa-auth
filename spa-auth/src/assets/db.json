@@ -1,0 +1,23 @@
+{
+  "employee": [
+    {
+      "id": "100",
+      "name": "Adi",
+      "DOJ": "10-10-2020",
+      "salary": 35000,
+      "email": "adi@gadgeon.com"
+    }
+  ],
+  "users": [
+    {
+      "id": 10,
+      "name": "Adi"
+    },
+    {
+      "name": "a",
+      "email": "aaaaaaaaaaaaa",
+      "password": "aaaaaaaaaaaaaaaaa",
+      "id": 11
+    }
+  ]
+}
